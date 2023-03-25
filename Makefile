@@ -102,7 +102,7 @@ tmp.s:	boot/bootsect.s tools/system
 	@cat boot/bootsect.s >> tmp.s
 
 clean:
-	@rm -f Image System.map tmp_make core boot/bootsect boot/setup
+	@rm -f  System.map tmp_make core boot/bootsect boot/setup
 	@rm -f init/*.o tools/system boot/*.o typescript* info bochsout.txt
 	@for i in mm fs kernel lib boot; do make clean -C $$i; done 
 info:
